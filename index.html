@@ -533,6 +533,12 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 560px) { .mandate-cta { padding: 22px 20px; } .mandate-cta .btn { width: 100%; justify-content: center; } }
 .mandate-cta__text b, .mandate-cta__text b span { color: #fff; }
 .contact .footer { margin-top: clamp(56px, 7vw, 90px); }
+
+.adv__proof { color: var(--navy) !important; font-weight: 600; border-left: 4px solid var(--lime); padding-left: 16px; }
+.contact__links { display: flex; align-items: center; justify-content: center; gap: 14px 32px; flex-wrap: wrap; }
+.contact__li { display: inline-flex; align-items: center; gap: 10px; color: rgba(255,255,255,.85); text-decoration: none; font-size: clamp(16px, 1.5vw, 19px); font-weight: 600; padding: 9px 16px; border: 1.5px solid rgba(255,255,255,.3); border-radius: 999px; transition: border-color .2s, color .2s; }
+.contact__li svg { width: 18px; height: 18px; }
+.contact__li:hover { color: var(--lime); border-color: var(--lime); }
 </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Lina Wüller-Vagt","alternateName":"Lina Wüller","url":"https://linawueller.com","sameAs":["https://www.linkedin.com/in/linawueller/","https://www.instagram.com/linawueller/"],"jobTitle":"Unternehmerin, Beirätin, Advisor","email":"mailto:office@linawueller.com","worksFor":{"@type":"Organization","name":"Ovy GmbH","url":"https://www.ovyapp.com"}}
@@ -644,7 +650,9 @@ body.modal-open { overflow: hidden; }
         <p class="eyebrow">Board &amp; Advisory</p>
         <h2 class="section-title" id="advisory-title">Beyond the Boardroom<span class="dot">.</span></h2>
         <p data-lang="de">Ich bringe 15 Jahre operative Erfahrung in den Aufbau und die Weiterentwicklung von Unternehmen ein. Als Sparringspartnerin für Geschäftsführungen, Gesellschafter und Gremien verbinde ich strategisches Denken mit unternehmerischer Umsetzung.</p>
+        <p data-lang="de" class="adv__proof">Meine Perspektive ist operativ geprägt: von der Produktentwicklung über regulierte Märkte und digitale Vertriebskanäle bis zur wirtschaftlichen Steuerung eigener Unternehmen.</p>
         <p data-lang="en">I bring 15 years of operational experience in building and developing companies. As a sparring partner for management teams, shareholders and boards, I combine strategic thinking with entrepreneurial execution.</p>
+        <p data-lang="en" class="adv__proof">My perspective is shaped by operational experience: from product development and regulated markets to digital sales channels and the financial management of my own companies.</p>
       </div>
       <p class="adv__sub"><span data-lang="de">Meine Schwerpunkte</span><span data-lang="en">My focus areas</span></p>
       <div class="adv__grid adv__grid--4">
@@ -666,19 +674,16 @@ body.modal-open { overflow: hidden; }
   <!-- KONTAKT -->
   <section class="contact" id="kontakt" aria-labelledby="contact-title">
     <div class="wrap">
-      <a class="contact__mail" id="contact-title" href="mailto:office@linawueller.com">office@linawueller.com</a>
+      <div class="contact__links">
+        <a class="contact__mail" id="contact-title" href="mailto:office@linawueller.com">office@linawueller.com</a>
+        <a class="contact__li" href="https://www.linkedin.com/in/linawueller/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>LinkedIn</a>
+      </div>
 
       <footer class="footer">
         <span>© <span id="year">2026</span> Lina Wüller-Vagt</span>
-        <nav aria-label="Legal &amp; Social">
+        <nav aria-label="Legal">
           <a href="#impressum" data-modal="impressum"><span data-lang="de">Impressum</span><span data-lang="en">Legal notice</span></a>
           <a href="#datenschutz" data-modal="datenschutz"><span data-lang="de">Datenschutz</span><span data-lang="en">Privacy</span></a>
-          <a href="https://www.linkedin.com/in/linawueller/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/linawueller/" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-          </a>
         </nav>
       </footer>
     </div>
@@ -724,8 +729,8 @@ body.modal-open { overflow: hidden; }
       <p>Die Domain linawueller.com ist bei GoDaddy registriert. GoDaddy stellt lediglich die Domain und die Namensauflösung (DNS) bereit; Inhalte der Website werden dort nicht gespeichert.</p>
       <h2>4. Kontakt per E-Mail</h2>
       <p>Wenn Sie auf unsere E-Mail-Adresse, auf „Kontakt“ oder auf „Jetzt anfragen“ klicken, öffnet sich Ihr eigenes E-Mail-Programm. Dabei werden von dieser Website keine Daten übertragen. Schreiben Sie uns eine E-Mail, verarbeiten wir Ihre Angaben (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage (Art. 6 Abs. 1 lit. b bzw. f DSGVO) und löschen sie, sobald sie nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
-      <h2>5. Links zu LinkedIn, Instagram und anderen Websites</h2>
-      <p>Links zu LinkedIn, Instagram, Ovy oder Levito sind einfache Verlinkungen. Daten werden erst übertragen, wenn Sie den Link anklicken; dann gilt die Datenschutzerklärung des jeweiligen Anbieters.</p>
+      <h2>5. Links zu LinkedIn und anderen Websites</h2>
+      <p>Links zu LinkedIn, Ovy oder Levito sind einfache Verlinkungen. Daten werden erst übertragen, wenn Sie den Link anklicken; dann gilt die Datenschutzerklärung des jeweiligen Anbieters.</p>
       <h2>6. Ihre Rechte</h2>
       <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch (Art. 15–21 DSGVO). Außerdem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren, z. B. beim Hamburgischen Beauftragten für Datenschutz und Informationsfreiheit.</p>
       <p class="legal-date">Stand: Oktober 2026</p>
