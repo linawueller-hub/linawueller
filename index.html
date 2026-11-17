@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lina Wüller-Vagt</title>
-  <meta name="description" content="Lina Wüller-Vagt. Gründerin von Ovy, der Levito Group und Rebel at Heart. Beirats- und Aufsichtsratsmandate sowie Advisory für etablierte Unternehmen und Growth Companies.">
+  <meta name="description" content="Lina Wüller-Vagt. Unternehmerin mit 15 Jahren Erfahrung und drei Gründungen. Beirat, Aufsichtsrat und Advisory für Familienunternehmen und Mittelstand.">
   <link rel="canonical" href="https://linawueller.com/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Lina Wüller-Vagt. Founder, Speaker &amp; Advisor">
-  <meta property="og:description" content="Founder. Advisor.">
+  <meta property="og:title" content="Lina Wüller-Vagt. Entrepreneur. Board &amp; Advisory.">
+  <meta property="og:description" content="15 Jahre unternehmerische Erfahrung. Drei Gründungen. Wachstum, digitale Geschäftsmodelle und Markenführung.">
   <meta property="og:url" content="https://linawueller.com/">
   <meta name="theme-color" content="#081C2E">
   <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMwQjI3NDAiLz48cmVjdCB4PSIxMCIgeT0iNDIiIHdpZHRoPSI0NCIgaGVpZ2h0PSI2IiBmaWxsPSIjQjdGRjAwIi8+PHRleHQgeD0iMzIiIHk9IjM4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iSW50ZXIsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjIyIiBsZXR0ZXItc3BhY2luZz0iLTEiIGZpbGw9IiNmZmYiPkxXVjwvdGV4dD48L3N2Zz4K" type="image/svg+xml">
@@ -479,9 +479,63 @@ body.modal-open { overflow: hidden; }
 .legal-page .legal { padding-top: 120px; }
 .legal-close { position: fixed; top: 22px; right: var(--gutter); z-index: 101; }
 
+
+/* ---------- v3: Ovy als Leitreferenz, Schwerpunkte ---------- */
+.cards { grid-template-columns: 1fr 1fr; }
+.card--feature { grid-column: 1 / -1; display: grid; grid-template-columns: 1.25fr 1fr; gap: clamp(28px, 4vw, 64px); align-items: center; padding: clamp(32px, 4vw, 52px); }
+.card--feature .feature__text { display: flex; flex-direction: column; }
+.card--feature .feature__text p { max-width: 560px; }
+.kpis { margin: 0; display: grid; gap: 14px; }
+.kpis div { background: var(--navy); color: #fff; padding: 20px 24px; display: flex; align-items: baseline; gap: 16px; }
+.kpis dt { font-size: clamp(26px, 2.6vw, 36px); font-weight: 800; letter-spacing: -.02em; color: var(--lime); line-height: 1; min-width: 5.2em; }
+.kpis dd { margin: 0; font-size: 15px; color: rgba(255,255,255,.82); }
+.adv__sub { font-size: 13px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin: 0 0 16px; }
+.adv__grid--4 { grid-template-columns: repeat(2, 1fr); }
+.adv__item h3 { font-size: 20px; }
+.adv__formats { color: var(--muted); margin: 0 0 28px; }
+.adv__formats b { color: var(--navy); }
+@media (max-width: 880px) {
+  .card--feature { grid-template-columns: 1fr; }
+  .adv__grid--4 { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .cards { display: grid; grid-template-columns: 1fr; overflow: visible; margin: 0; padding: 0; }
+  .card { flex: none; }
+  .kpis dt { min-width: 4.6em; }
+}
+.kpis dd { white-space: nowrap; }
+@media (max-width: 480px) { .kpis div { padding: 16px 18px; gap: 12px; } .kpis dt { font-size: 24px; min-width: 4.4em; } .kpis dd { font-size: 14px; } }
+@media (max-width: 380px) { .card--feature { padding: 26px 20px; } .kpis div { padding: 14px 16px; gap: 10px; } .kpis dt { font-size: 22px; min-width: 4.4em; } .kpis dd { font-size: 13.5px; } }
+@media (max-width: 340px) { .kpis dd { white-space: normal; } }
+
+/* ---------- KPIs weicher ---------- */
+.kpis { gap: 28px; }
+.kpis div { background: none; color: var(--navy); padding: 0; display: block; position: relative; padding-left: 22px; }
+.kpis div::before { content: ""; position: absolute; left: 0; top: 6px; bottom: 6px; width: 5px; border-radius: 3px; background: var(--lime); }
+.kpis dt { color: var(--navy); font-size: clamp(36px, 3.6vw, 52px); font-weight: 800; letter-spacing: -.03em; line-height: 1; min-width: 0; margin-bottom: 6px; }
+.kpis dd { color: var(--muted); font-size: 15px; white-space: normal; }
+/* Variante B: runde Karten */
+.kpis--soft div { background: #fff; border-radius: 20px; padding: 22px 26px; box-shadow: 0 10px 30px rgba(11,39,64,.08); }
+.kpis--soft div::before { display: none; }
+@media (max-width: 880px) { .kpis { grid-template-columns: repeat(3, 1fr); gap: 16px; } .kpis dt { font-size: 30px; } .kpis dd { font-size: 13.5px; } }
+@media (max-width: 480px) { .kpis { grid-template-columns: 1fr; gap: 20px; } .kpis div { padding: 0 0 0 18px; } .kpis dt { font-size: 34px; min-width: 0; } .kpis--soft div { padding: 18px 20px; } }
+
+/* ---------- Mandate + CTA verbunden ---------- */
+.mandate-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+  background: var(--navy); color: #fff; text-decoration: none; padding: 26px 30px; border-radius: 16px; }
+.mandate-cta__text { display: grid; gap: 4px; }
+.mandate-cta__text b { font-size: clamp(18px, 1.7vw, 22px); font-weight: 700; letter-spacing: -.01em; }
+.mandate-cta__text span { color: rgba(255,255,255,.72); font-size: 15px; }
+.mandate-cta .btn { flex: none; }
+.mandate-cta:hover .btn { background: #fff; border-color: #fff; }
+.mandate-cta:hover .btn svg { transform: translateX(4px); }
+.contact { padding-top: clamp(64px, 8vw, 110px); }
+@media (max-width: 560px) { .mandate-cta { padding: 22px 20px; } .mandate-cta .btn { width: 100%; justify-content: center; } }
+.mandate-cta__text b, .mandate-cta__text b span { color: #fff; }
+.contact .footer { margin-top: clamp(56px, 7vw, 90px); }
 </style>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Lina Wüller-Vagt","alternateName":"Lina Wüller","url":"https://linawueller.com","sameAs":["https://www.linkedin.com/in/linawueller/","https://www.instagram.com/linawueller/"],"jobTitle":"Unternehmerin, Advisor","email":"mailto:office@linawueller.com","worksFor":{"@type":"Organization","name":"Ovy GmbH","url":"https://www.ovyapp.com"}}
+  {"@context":"https://schema.org","@type":"Person","name":"Lina Wüller-Vagt","alternateName":"Lina Wüller","url":"https://linawueller.com","sameAs":["https://www.linkedin.com/in/linawueller/","https://www.instagram.com/linawueller/"],"jobTitle":"Unternehmerin, Beirätin, Advisor","email":"mailto:office@linawueller.com","worksFor":{"@type":"Organization","name":"Ovy GmbH","url":"https://www.ovyapp.com"}}
   </script>
 </head>
 <body>
@@ -499,7 +553,7 @@ body.modal-open { overflow: hidden; }
       <a href="#ueber-mich"><span data-lang="de">Über mich</span><span data-lang="en">About</span></a>
       <a href="#unternehmen"><span data-lang="de">Unternehmen</span><span data-lang="en">Companies</span></a>
       <a href="#advisory">Advisory</a>
-      <a class="btn btn--ghost-light" href="#kontakt"><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span>
+      <a class="btn btn--ghost-light" href="mailto:office@linawueller.com"><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </nav>
   </div>
@@ -514,9 +568,9 @@ body.modal-open { overflow: hidden; }
     </div>
     <div class="wrap hero__content">
       <h1 id="hero-title" class="hero__name">Lina<br>Wüller-Vagt</h1>
-      <p class="hero__role lime">Founder, Speaker &amp; Advisor.</p>
-      <p class="lead" data-lang="de">Unternehmerin mit 15 Jahren Praxiserfahrung.<br>Von der Gründung bis zur Skalierung.</p>
-      <p class="lead" data-lang="en">Entrepreneur with 15 years of hands-on experience.<br>From founding to scaling.</p>
+      <p class="hero__role lime">Entrepreneur. Board &amp; Advisory.</p>
+      <p class="lead" data-lang="de">15 Jahre unternehmerische Erfahrung. Drei Gründungen.<br>Expertise in Wachstum, digitalen Geschäftsmodellen und Markenführung.</p>
+      <p class="lead" data-lang="en">15 years of entrepreneurial experience. Three companies founded.<br>Expertise in growth, digital business models and brand management.</p>
     </div>
     <a class="hero__scroll" href="#ueber-mich">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v16M6 14l6 6 6-6"/></svg>Scroll</a>
@@ -527,14 +581,14 @@ body.modal-open { overflow: hidden; }
     <div class="wrap about__grid">
       <div class="reveal">
         <p class="eyebrow"><span data-lang="de">Über mich</span><span data-lang="en">About me</span></p>
-        <h2 id="about-title"><span data-lang="de">Drei Gründungen. Ein Ansatz</span><span data-lang="en">Three companies. One approach</span><span class="dot">.</span></h2>
+        <h2 id="about-title">Entrepreneurial by nature<span class="dot">.</span></h2>
         <div data-lang="de">
-          <p>Ich habe drei Unternehmen gegründet, effizient aufgebaut und nachhaltige Geschäftsmodelle entwickelt. Ich reduziere Komplexität, entwickle klare Markenstrategien und denke in Skalierung.</p>
-          <p>Besonders faszinieren mich Familienunternehmen. Denn wo Old- und New Economy zusammentreffen, entsteht enormes Potenzial.</p>
+          <p>Ich bin eine Hands-on-Unternehmerin. Ich reduziere Komplexität, entwickle klare Markenstrategien und denke in Skalierung. Neben meinen unternehmerischen Projekten bin ich Mutter von zwei Kindern und weiß, dass gute Entscheidungen oft vor allem eines brauchen: klare Prioritäten.</p>
+          <p>Besonders interessieren mich Familienunternehmen und der Mittelstand. Ich bin überzeugt, dass die Verbindung aus unternehmerischer Erfahrung, digitalem Denken und etablierten Strukturen enormes Potenzial bietet.</p>
         </div>
         <div data-lang="en">
-          <p>I have founded three companies, built them efficiently and developed sustainable business models. I reduce complexity, develop clear brand strategies and think in terms of scale.</p>
-          <p>I am especially fascinated by family-owned businesses. Because where the old and the new economy meet, enormous potential emerges.</p>
+          <p>I am a hands-on entrepreneur. I reduce complexity, develop clear brand strategies and think in terms of scale. Alongside my entrepreneurial projects, I am a mother of two and know that good decisions often need one thing above all: clear priorities.</p>
+          <p>I am particularly interested in family-owned businesses and the Mittelstand. I am convinced that combining entrepreneurial experience, digital thinking and established structures offers enormous potential.</p>
         </div>
       </div>
     </div>
@@ -545,31 +599,38 @@ body.modal-open { overflow: hidden; }
     <div class="wrap">
       <div class="companies__head">
         <div>
-          <h2 class="section-title" id="companies-title"><span data-lang="de">Meine Unternehmen</span><span data-lang="en">My companies</span><span class="dot">.</span></h2>
+          <p class="eyebrow"><span data-lang="de">Meine Unternehmen</span><span data-lang="en">My companies</span></p>
+          <h2 class="section-title" id="companies-title">From Vision to Venture<span class="dot">.</span></h2>
         </div>
       </div>
       <div class="cards">
-        <a class="card reveal" href="https://www.ovyapp.com" target="_blank" rel="noopener">
-          <div class="card__mark"><span class="mark-ovy">ovy</span></div>
-          <p class="card__role">Health Tech</p>
-          <p data-lang="de">Health-Tech-Unternehmen, gegründet mit meiner Schwester: zertifizierte Medizinprodukte in Software und Hardware, getragen von namhaften Investoren.</p>
-          <p data-lang="en">Health tech company founded with my sister: certified medical devices in software and hardware, backed by renowned investors.</p>
-          <ul class="tags"><li>Health Tech</li><li><span data-lang="de">Medizinprodukte</span><span data-lang="en">Medical devices</span></li></ul>
-          <span class="card__link"><span data-lang="de">Mehr zu Ovy</span><span data-lang="en">More about Ovy</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <a class="card card--feature reveal" href="https://www.ovyapp.com" target="_blank" rel="noopener">
+          <div class="feature__text">
+            <div class="card__mark"><span class="mark-ovy">ovy</span></div>
+            <p class="card__role">Health Tech</p>
+            <p data-lang="de">Gemeinsam mit meiner Schwester gegründet und als CEO aufgebaut. Ovy entwickelt und vertreibt CE&#8209;zertifizierte Medizinprodukte in Software und Hardware. Mit Multi-Channel-Vertrieb über Online, Handel und Marktplätze, wiederkehrenden digitalen Umsätzen und strategischen Investoren.</p>
+            <p data-lang="en">Co-founded with my sister and built as CEO. Ovy develops and sells CE&#8209;certified medical devices in software and hardware. With multi-channel sales through online, retail and marketplaces, recurring digital revenue and strategic investors.</p>
+            <span class="card__link"><span data-lang="de">Mehr zu Ovy</span><span data-lang="en">More about Ovy</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+          <dl class="kpis">
+            <div><dt>1 Mio.</dt><dd><span data-lang="de">App-Downloads</span><span data-lang="en">app downloads</span></dd></div>
+            <div><dt>500.000+</dt><dd><span data-lang="de">verkaufte Produkte</span><span data-lang="en">products sold</span></dd></div>
+            <div><dt>MDR IIb</dt><dd><span data-lang="de">Medizinprodukt</span><span data-lang="en">medical device</span></dd></div>
+          </dl>
         </a>
         <a class="card reveal" href="https://levito-group.com" target="_blank" rel="noopener">
           <div class="card__mark"><img class="logo-levito" src="data:image/png;base64,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" alt="Levito Group" width="400" height="194"></div>
           <p class="card__role">Consumer Brands</p>
-          <p data-lang="de">Gründergeführte Venture-Gruppe, die Consumer Brands für globale Märkte entwickelt, launcht und skaliert.</p>
-          <p data-lang="en">Founder-led venture group that creates, launches and scales consumer brands for global markets.</p>
+          <p data-lang="de">Gründergeführte Venture-Gruppe im Aufbau. Wir entwickeln Consumer Brands von der Produktentwicklung über die Produktion in China und Europa bis zur Vermarktung.</p>
+          <p data-lang="en">Founder-led venture group in its build-up phase. We develop consumer brands from product development and production in China and Europe to marketing.</p>
           <ul class="tags"><li>Consumer Brands</li><li>Venture Building</li></ul>
           <span class="card__link"><span data-lang="de">Mehr zu Levito</span><span data-lang="en">More about Levito</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </a>
         <div class="card reveal">
           <div class="card__mark"><span class="mark-rah">REBEL<em>AT</em>HEART</span></div>
           <p class="card__role"><span data-lang="de">Agentur</span><span data-lang="en">Agency</span></p>
-          <p data-lang="de">Meine erste Gründung: eine PR- und Branding-Agentur für Growth Companies. Mit den Ressourcen der Agentur haben wir Ovy entwickelt.</p>
-          <p data-lang="en">My first company: a PR and branding agency for growth companies. We used the agency's resources to develop Ovy.</p>
+          <p data-lang="de">Meine erste Gründung: eine PR- und Branding-Agentur für Growth Companies. Daraus entstand später die Idee für Ovy. Heute ist Ovy eine etablierte FemTech-Marke mit eigener Medizin-App und Produkten rund um die reproduktive Gesundheit.</p>
+          <p data-lang="en">My first company: a PR and branding agency for growth companies. It later gave rise to the idea for Ovy. Today, Ovy is an established FemTech brand with its own medical app and products for reproductive health.</p>
           <ul class="tags"><li>Branding</li><li><span data-lang="de">Agentur</span><span data-lang="en">Agency</span></li></ul>
         </div>
       </div>
@@ -580,25 +641,32 @@ body.modal-open { overflow: hidden; }
   <section class="adv" id="advisory" aria-labelledby="advisory-title">
     <div class="wrap">
       <div class="adv__head reveal">
-        <p class="eyebrow">Advisory &amp; Board</p>
-        <h2 class="section-title" id="advisory-title"><span data-lang="de">Strategie. Struktur. Skalierung</span><span data-lang="en">Strategy. Structure. Scale</span><span class="dot">.</span></h2>
-        <p data-lang="de">Ich begleite Geschäftsführungen, Gesellschafter und Gremien. Dort, wo aus einem Start-up ein Unternehmen wird. Und dort, wo etablierte Unternehmen wieder mehr Startup-Tempo brauchen.</p>
-        <p data-lang="en">I work with management teams, shareholders and boards. Where a start-up turns into a company. And where established companies need start-up speed again.</p>
+        <p class="eyebrow">Board &amp; Advisory</p>
+        <h2 class="section-title" id="advisory-title">Beyond the Boardroom<span class="dot">.</span></h2>
+        <p data-lang="de">Ich bringe 15 Jahre operative Erfahrung in den Aufbau und die Weiterentwicklung von Unternehmen ein. Als Sparringspartnerin für Geschäftsführungen, Gesellschafter und Gremien verbinde ich strategisches Denken mit unternehmerischer Umsetzung.</p>
+        <p data-lang="en">I bring 15 years of operational experience in building and developing companies. As a sparring partner for management teams, shareholders and boards, I combine strategic thinking with entrepreneurial execution.</p>
       </div>
-      <div class="adv__grid">
-        <div class="adv__item reveal"><h3><span data-lang="de">Beirat</span><span data-lang="en">Advisory board</span></h3><p data-lang="de">Strategische Sparrings&shy;partnerin für Geschäfts&shy;führung und Gesellschafter.</p><p data-lang="en">Strategic sparring partner for management and shareholders.</p></div>
-        <div class="adv__item reveal"><h3><span data-lang="de">Aufsichtsrat</span><span data-lang="en">Supervisory board</span></h3><p data-lang="de">Für kleine börsen&shy;notierte und mittel&shy;ständische Unternehmen.</p><p data-lang="en">For small listed companies and mid-sized businesses.</p></div>
-        <div class="adv__item reveal"><h3>Advisory</h3><p data-lang="de">Projektbezogen oder langfristig. Zu Wachstum, Marke, E-Commerce und KI-Transformation.</p><p data-lang="en">Project-based or long-term. On growth, brand, e-commerce and AI transformation.</p></div>
+      <p class="adv__sub"><span data-lang="de">Meine Schwerpunkte</span><span data-lang="en">My focus areas</span></p>
+      <div class="adv__grid adv__grid--4">
+        <div class="adv__item reveal"><h3><span data-lang="de">Wachstum &amp; Geschäftsmodelle</span><span data-lang="en">Growth &amp; business models</span></h3><p data-lang="de">Neue Geschäftsfelder entwickeln, Geschäftsmodelle weiterentwickeln und profitables Wachstum gestalten.</p><p data-lang="en">Developing new business areas, evolving business models and shaping profitable growth.</p></div>
+        <div class="adv__item reveal"><h3><span data-lang="de">Digitalisierung &amp; E&#8209;Commerce</span><span data-lang="en">Digital &amp; e&#8209;commerce</span></h3><p data-lang="de">Digitale Vertriebskanäle, Plattform&shy;ökonomie und datengetriebene Geschäftsmodelle.</p><p data-lang="en">Digital sales channels, platform economics and data-driven business models.</p></div>
+        <div class="adv__item reveal"><h3><span data-lang="de">Marke &amp; Positionierung</span><span data-lang="en">Brand &amp; positioning</span></h3><p data-lang="de">Marken strategisch entwickeln und als Wachstumstreiber einsetzen.</p><p data-lang="en">Developing brands strategically and using them as a driver of growth.</p></div>
+        <div class="adv__item reveal"><h3><span data-lang="de">Transformation im Mittelstand</span><span data-lang="en">Transformation in the Mittelstand</span></h3><p data-lang="de">Unternehmerische Agilität mit den Stärken etablierter Organisationen verbinden.</p><p data-lang="en">Combining entrepreneurial agility with the strengths of established organisations.</p></div>
       </div>
-      <a class="btn btn--lime" href="#kontakt"><span data-lang="de">Jetzt anfragen</span><span data-lang="en">Get in touch</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="mandate-cta reveal" href="mailto:office@linawueller.com?subject=Mandatsanfrage">
+        <span class="mandate-cta__text">
+          <b><span data-lang="de">Beirats-, Aufsichtsrats- und Advisory-Mandate.</span><span data-lang="en">Advisory board, supervisory board and advisory mandates.</span></b>
+          <span><span data-lang="de">Projektbezogen oder als langfristige Begleitung.</span><span data-lang="en">Project-based or as long-term support.</span></span>
+        </span>
+        <span class="btn btn--lime"><span data-lang="de">Jetzt anfragen</span><span data-lang="en">Get in touch</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
     </div>
   </section>
 
   <!-- KONTAKT -->
   <section class="contact" id="kontakt" aria-labelledby="contact-title">
     <div class="wrap">
-      <p id="contact-title"><span data-lang="de">Ich freue mich auf Ihre Nachricht.</span><span data-lang="en">I look forward to hearing from you.</span></p>
-      <a class="contact__mail" href="mailto:office@linawueller.com">office@linawueller.com</a>
+      <a class="contact__mail" id="contact-title" href="mailto:office@linawueller.com">office@linawueller.com</a>
 
       <footer class="footer">
         <span>© <span id="year">2026</span> Lina Wüller-Vagt</span>
@@ -655,7 +723,7 @@ body.modal-open { overflow: hidden; }
       <p>GitHub ist unter dem EU-US Data Privacy Framework zertifiziert; die Übermittlung von Daten in die USA erfolgt auf Grundlage des Angemessenheitsbeschlusses der EU-Kommission (Art. 45 DSGVO). Weitere Informationen: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub-Datenschutzerklärung</a>.</p>
       <p>Die Domain linawueller.com ist bei GoDaddy registriert. GoDaddy stellt lediglich die Domain und die Namensauflösung (DNS) bereit; Inhalte der Website werden dort nicht gespeichert.</p>
       <h2>4. Kontakt per E-Mail</h2>
-      <p>Wenn Sie auf unsere E-Mail-Adresse klicken, öffnet sich Ihr eigenes E-Mail-Programm. Dabei werden von dieser Website keine Daten übertragen. Schreiben Sie uns eine E-Mail, verarbeiten wir Ihre Angaben (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage (Art. 6 Abs. 1 lit. b bzw. f DSGVO) und löschen sie, sobald sie nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+      <p>Wenn Sie auf unsere E-Mail-Adresse, auf „Kontakt“ oder auf „Jetzt anfragen“ klicken, öffnet sich Ihr eigenes E-Mail-Programm. Dabei werden von dieser Website keine Daten übertragen. Schreiben Sie uns eine E-Mail, verarbeiten wir Ihre Angaben (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage (Art. 6 Abs. 1 lit. b bzw. f DSGVO) und löschen sie, sobald sie nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
       <h2>5. Links zu LinkedIn, Instagram und anderen Websites</h2>
       <p>Links zu LinkedIn, Instagram, Ovy oder Levito sind einfache Verlinkungen. Daten werden erst übertragen, wenn Sie den Link anklicken; dann gilt die Datenschutzerklärung des jeweiligen Anbieters.</p>
       <h2>6. Ihre Rechte</h2>
